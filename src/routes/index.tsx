@@ -4,17 +4,17 @@ import { Mail, Phone, MapPin, ArrowUpRight, Server, Code2, Boxes } from "lucide-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Rafli Kamandita Anugrah — IT & Backend Developer" },
+      { title: "Rafli Kamandita Anugrah — Backend Developer & ERP Integrator" },
       {
         name: "description",
         content:
-          "Portofolio Rafli Kamandita Anugrah: Senior IT Support & Developer dengan spesialisasi backend PHP/Golang, integrasi Oracle NetSuite, dan infrastruktur IT.",
+          "Portfolio of Rafli Kamandita Anugrah — Backend Developer and IT Specialist focused on PHP, Golang, MySQL, Oracle NetSuite integration, and reliable IT infrastructure.",
       },
-      { property: "og:title", content: "Rafli Kamandita Anugrah — IT & Backend Developer" },
+      { property: "og:title", content: "Rafli Kamandita Anugrah — Backend Developer & ERP Integrator" },
       {
         property: "og:description",
         content:
-          "Spesialis pengembangan backend, integrasi ERP Oracle NetSuite, dan infrastruktur IT di Bogor, Indonesia.",
+          "Backend developer and ERP integrator based in Bogor, Indonesia. I build internal tools, connect systems, and keep IT infrastructure running.",
       },
       { property: "og:type", content: "profile" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -38,8 +38,8 @@ const skills = [
     icon: Server,
     title: "IT Infrastructure & Quality",
     items: [
-      "Dokumentasi SIT & UAT",
-      "Troubleshooting Hardware & Software",
+      "SIT & UAT Documentation",
+      "Hardware & Software Troubleshooting",
       "End-User Support",
     ],
   },
@@ -49,12 +49,12 @@ const experience = [
   {
     company: "PT. Dover Chemical",
     role: "Senior IT Support / Developer",
-    period: "2020 – Sekarang",
+    period: "2020 – Present",
     points: [
-      "Bertanggung jawab penuh atas pemeliharaan dan kustomisasi ERP Oracle NetSuite untuk mendukung operasional perusahaan.",
-      "Mengembangkan aplikasi internal menggunakan PHP dan MySQL, serta mengimplementasikan layanan mikro berbasis Golang untuk optimasi sistem.",
-      "Mengintegrasikan API pihak ketiga guna otomatisasi sinkronisasi data dan meminimalisir kesalahan manual.",
-      "Memberikan dukungan teknis tingkat lanjut bagi 100+ pengguna untuk menjaga stabilitas infrastruktur IT.",
+      "Own the health and customization of Oracle NetSuite ERP, making sure it keeps pace with how the business actually runs.",
+      "Build internal tools with PHP and MySQL, and write lean Golang microservices to take repetitive work off the team’s plate.",
+      "Wire third-party APIs into our ecosystem so data moves automatically instead of sitting in spreadsheets.",
+      "Act as the go-to technical partner for 100+ users — solving problems, documenting fixes, and keeping operations steady.",
     ],
   },
   {
@@ -62,17 +62,17 @@ const experience = [
     role: "Developer / QA — Internship",
     period: "2019",
     points: [
-      "Berkontribusi dalam pengembangan website internal perusahaan menggunakan teknologi berbasis web.",
-      "Menyusun dokumentasi teknis komprehensif, termasuk System Integration Test (SIT) dan User Acceptance Test (UAT).",
+      "Contributed to internal web projects while learning how a large engineering team ships software.",
+      "Wrote clear SIT and UAT documentation that helped the team catch issues before users did.",
     ],
   },
   {
-    company: "DKSI IPB — Direktorat Komunikasi & Sistem Informasi",
+    company: "DKSI IPB — Directorate of Communication & Information Systems",
     role: "IT Technical Support / TKJ — Internship",
     period: "2012",
     points: [
-      "Melakukan instalasi, konfigurasi, dan pemeliharaan jaringan komputer di lingkungan kampus.",
-      "Membantu proses troubleshooting perangkat keras dan memastikan infrastruktur IT berjalan dengan baik.",
+      "Installed, configured, and maintained campus network infrastructure.",
+      "Troubleshot hardware issues and helped keep daily IT services up and running for students and staff.",
     ],
   },
 ];
@@ -80,28 +80,28 @@ const experience = [
 const projects = [
   {
     title: "CRM Application",
-    desc: "Sistem manajemen janji temu teknis, pelaporan dukungan, dan jadwal pengiriman.",
+    desc: "A technical appointment, support ticket, and delivery scheduling tool that keeps customer operations organized.",
   },
   {
-    title: "Sistem Antrean & Booking",
-    desc: "Sistem antrean pemuatan barang serta reservasi ruang rapat secara online.",
+    title: "Queue & Booking System",
+    desc: "Online loading-queue and meeting-room reservation system that reduced scheduling friction for operations teams.",
   },
   {
-    title: "Integrasi ERP",
-    desc: "Sinkronisasi data real-time antara Oracle NetSuite dan aplikasi eksternal.",
+    title: "ERP Integration",
+    desc: "Real-time data sync between Oracle NetSuite and external apps, cutting manual entry and keeping records consistent.",
   },
   {
-    title: "Manajemen Aset",
-    desc: "Pengembangan modul Sales Order dan sistem pemeliharaan aset perusahaan.",
+    title: "Asset Management",
+    desc: "Sales Order module and asset maintenance tracker that gave the company a clearer picture of its resources.",
   },
 ];
 
 const nav = [
-  { href: "#tentang", label: "Tentang" },
-  { href: "#keahlian", label: "Keahlian" },
-  { href: "#pengalaman", label: "Pengalaman" },
-  { href: "#proyek", label: "Proyek" },
-  { href: "#kontak", label: "Kontak" },
+  { href: "#about", label: "About" },
+  { href: "#skills", label: "Skills" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
 ];
 
 function Section({
@@ -145,7 +145,7 @@ function Portfolio() {
             href="mailto:revolutiondesain@gmail.com"
             className="rounded-md bg-primary px-3 py-2 text-xs font-semibold text-primary-foreground transition-opacity hover:opacity-90"
           >
-            Hubungi Saya
+            Get in Touch
           </a>
         </div>
       </header>
@@ -164,36 +164,37 @@ function Portfolio() {
               Bogor, Indonesia
             </p>
             <h1 className="max-w-3xl text-4xl font-bold leading-[1.05] md:text-6xl">
-              Rafli Kamandita Anugrah
+              Hi, I’m Rafli — I turn operations into reliable systems.
             </h1>
             <p className="mt-4 max-w-2xl text-lg text-primary md:text-xl">
-              Senior IT Support / Developer — Backend, Integrasi ERP & Infrastruktur IT
+              Backend Developer · ERP Integrator · IT Infrastructure Specialist
             </p>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground">
-              Profesional IT berpengalaman dengan spesialisasi dalam pengembangan sistem backend
-              dan integrasi ERP. Mahir mengelola infrastruktur IT serta membangun aplikasi internal
-              menggunakan PHP, MySQL, dan Golang.
+              I started out keeping hardware and networks alive, then grew into building the
+              software that runs behind them. Today, I help companies connect their ERP to the rest
+              of their stack, automate manual workflows, and support the people who use the tools
+              every day.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="#pengalaman"
+                href="#experience"
                 className="rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
               >
-                Lihat Pengalaman
+                See My Experience
               </a>
               <a
-                href="#kontak"
+                href="#contact"
                 className="rounded-md border border-border bg-card px-5 py-3 text-sm font-semibold transition-colors hover:bg-secondary"
               >
-                Kontak
+                Contact Me
               </a>
             </div>
             <dl className="mt-14 grid grid-cols-2 gap-6 border-t border-border pt-8 sm:grid-cols-4">
               {[
-                ["5+", "Tahun pengalaman"],
-                ["100+", "Pengguna didukung"],
-                ["3.52", "IPK / 4.00"],
-                ["4", "Proyek utama"],
+                ["5+", "Years of impact"],
+                ["100+", "Users supported"],
+                ["3.52", "GPA / 4.00"],
+                ["4", "Key projects"],
               ].map(([v, l]) => (
                 <div key={l}>
                   <dt className="font-display text-2xl font-semibold text-primary">{v}</dt>
@@ -204,15 +205,27 @@ function Portfolio() {
           </div>
         </section>
 
-        {/* Tentang */}
-        <Section id="tentang" eyebrow="Profil" title="Profil Profesional">
+        {/* About */}
+        <Section id="about" eyebrow="Profile" title="Why I Do What I Do">
           <div className="grid gap-8 md:grid-cols-3">
-            <p className="text-base leading-relaxed text-muted-foreground md:col-span-2">
-              Memiliki rekam jejak yang kuat mulai dari dukungan teknis infrastruktur hingga
-              pengembangan solusi web dan dokumentasi pengujian sistem untuk meningkatkan efisiensi
-              bisnis. Fokus saya adalah menerjemahkan kebutuhan operasional menjadi sistem yang
-              stabil, terintegrasi, dan mudah dipelihara.
-            </p>
+            <div className="space-y-4 text-base leading-relaxed text-muted-foreground md:col-span-2">
+              <p>
+                Technology fascinates me most when it quietly makes someone’s work easier. I enjoy
+                the moment a clunky manual process becomes a few clicks, or when two systems that
+                never talked before start sharing data in real time.
+              </p>
+              <p>
+                My path has taken me from campus networking and end-user support, through QA and
+                documentation, into backend development and ERP integration. That mix keeps me
+                grounded: I don’t just write code, I think about who will use it, what happens when
+                it breaks, and how to keep it running long after launch.
+              </p>
+              <p>
+                If your team needs someone who can sit between operations and engineering — speak
+                both languages, and turn business needs into stable systems — I’d love to hear from
+                you.
+              </p>
+            </div>
             <ul className="space-y-3 rounded-lg border border-border bg-card p-6 text-sm">
               <li className="flex items-center gap-3">
                 <MapPin className="h-4 w-4 text-primary" /> Bogor, Indonesia
@@ -227,8 +240,8 @@ function Portfolio() {
           </div>
         </Section>
 
-        {/* Keahlian */}
-        <Section id="keahlian" eyebrow="Kompetensi" title="Keahlian Teknis">
+        {/* Skills */}
+        <Section id="skills" eyebrow="Competencies" title="What I Bring to the Table">
           <div className="grid gap-4 md:grid-cols-3">
             {skills.map((s) => (
               <div
@@ -252,8 +265,8 @@ function Portfolio() {
           </div>
         </Section>
 
-        {/* Pengalaman */}
-        <Section id="pengalaman" eyebrow="Karier" title="Pengalaman Kerja">
+        {/* Experience */}
+        <Section id="experience" eyebrow="Career" title="Where I’ve Learned and Grown">
           <ol className="relative space-y-10 border-l border-border pl-6 md:pl-8">
             {experience.map((e) => (
               <li key={e.company} className="relative">
@@ -278,8 +291,8 @@ function Portfolio() {
           </ol>
         </Section>
 
-        {/* Proyek */}
-        <Section id="proyek" eyebrow="Portofolio" title="Proyek Utama">
+        {/* Projects */}
+        <Section id="projects" eyebrow="Portfolio" title="Projects That Taught Me the Most">
           <div className="grid gap-4 sm:grid-cols-2">
             {projects.map((p) => (
               <article
@@ -296,24 +309,24 @@ function Portfolio() {
           </div>
         </Section>
 
-        {/* Pendidikan */}
-        <Section id="pendidikan" eyebrow="Akademik" title="Pendidikan">
+        {/* Education */}
+        <Section id="education" eyebrow="Academic" title="Education">
           <div className="flex flex-wrap items-baseline justify-between gap-2 rounded-lg border border-border bg-card p-6">
             <div>
               <h3 className="text-lg font-semibold">Universitas Nusa Mandiri</h3>
               <p className="mt-1 text-sm text-muted-foreground">
-                Sistem Informasi — IPK 3.52 / 4.00
+                Information Systems — GPA 3.52 / 4.00
               </p>
             </div>
             <span className="font-mono text-xs text-muted-foreground">2017 – 2022</span>
           </div>
         </Section>
 
-        {/* Kontak */}
-        <Section id="kontak" eyebrow="Kontak" title="Mari Terhubung">
+        {/* Contact */}
+        <Section id="contact" eyebrow="Contact" title="Let’s Build Something Reliable Together">
           <p className="max-w-2xl text-base leading-relaxed text-muted-foreground">
-            Terbuka untuk diskusi seputar pengembangan backend, integrasi ERP, maupun peningkatan
-            infrastruktur IT.
+            Whether you need backend support, ERP integration, or someone who can make your IT
+            operations run smoother, I’m happy to start a conversation.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a
